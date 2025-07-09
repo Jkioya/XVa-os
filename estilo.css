@@ -1,0 +1,607 @@
+:root {
+  --beige-claro: #ffffff;
+  --cafe-borde: #c4a484;
+  --verde-olivo: #6a7755;
+  --fuente-elegante: 'Cormorant Upright', serif;
+  --fuente-caligrafica: 'Great Vibes', cursive;
+  --scroll-lineheight: 0%;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--beige-claro);
+  font-family: var(--fuente-elegante);
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenedor central */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  background-color: var(--beige-claro);
+  border-left: 1.5px solid var(--cafe-borde);
+  border-right: 1.5px solid var(--cafe-borde);
+  overflow: hidden;
+}
+
+/* Imagen decorativa estilo fondo */
+.decoracionGV {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  width: 60%;
+  height: auto;
+  opacity: 1;
+ 
+  z-index: 2;
+}
+
+
+
+
+/* Secciones principales */
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 12rem 1.2rem 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.section.inicio {
+  max-height: 800px;
+
+  background-image: url('marmolbeige.jpg'); /* Cambia por la ruta real de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+
+
+
+/* Bienvenida */
+.inicio h1 {
+  font-family: "Gwendolyn", cursive;
+  font-size: 4.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-weight: 10;
+  
+  
+  
+}
+
+.inicio h2 {
+  letter-spacing: 4px; 
+  font-family: "Arapey", serif;
+  font-size: 1.8rem;
+  font-weight: 10;
+  margin-bottom: 2rem;
+}
+
+.inicio h3 {
+  letter-spacing: 4px; 
+  font-family: "Arapey", serif;
+  font-size: 1.8rem;
+  font-weight: 10;
+
+  margin-bottom: 15rem;
+}
+
+.separador-verde {
+  background-color: var(--verde-olivo);
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  color: White;
+  font-family:"Great Vibes", cursive;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2);
+  height: auto;
+
+}
+
+.separador-verde p {
+  margin: 60px;
+  font-family: "Arapey", serif;
+  font-size: 1.4rem;
+  font-weight: 10;
+  margin-bottom: 60px;
+}
+
+.separador-verde span {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.recuadro-dedicatoria {
+  margin-top: -120px;
+  border: 2px solid var(--cafe-borde); /* mismo tono beige del borde de página */
+  padding: 1.5rem;
+ 
+  text-align: center;
+  font-size: 1.1rem;
+  
+  background-color: rgba(255, 255, 255, 0.9); /* ligeramente opaco si quieres efecto elegante */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.recuadro-dedicatoria p {
+  font-family: "Gwendolyn", cursive;
+  font-size: 2.5rem;
+  
+}
+
+
+
+#F1 {
+  margin-top: 0.4rem;
+  font-family: "Arapey", serif;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+#F2 {
+  margin-top: 0.4rem;
+  font-family: "Arapey", serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+
+}
+#F3 {
+  font-family: "Arapey", serif;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.reloj {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.reloj h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  color: #000;
+}
+
+.reloj-contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  
+}
+
+.reloj-bloque {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.reloj-numero {
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.05em;
+  font-family: 'Antic Didone', serif;
+}
+
+.reloj-etiqueta {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: #000000;
+  margin-top: 0.3rem;
+  font-family: 'Antic Didone', serif;
+}
+
+.reloj-subtitulo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  color: #000;
+}
+
+.section.reloj {
+    /* Imagen de fondo */
+    background-image: url('marmolbeige.jpg'); /* Cambia la ruta a tu imagen */
+  
+    /* Que la imagen cubra todo el área sin deformarse */
+    background-size: cover;
+    
+    /* Centrar la imagen */
+    background-position: center center;
+    
+    /* No repetir la imagen */
+    background-repeat: no-repeat;
+    
+    /* Altura fija de la sección (puedes ajustar) */
+    height: 650px; /* Ejemplo: 300px, cámbialo al alto que quieras */
+    
+    /* Opcional: para que el contenido interno tenga un poco de padding */
+    padding: rem;
+    
+    /* Para que el contenido dentro se vea bien */
+    color: #fff; /* si la imagen es oscura, usa blanco */
+    
+    /* Si quieres que la sección tenga un poco de sombra o overlay */
+    position: relative;
+}
+
+.flor-superior {
+  top: 13px;
+  right: 0;
+  transform: translate(25%, -15%); /* un poco fuera del borde, opcional */
+ 
+}
+
+/* Flor en esquina inferior izquierda */
+.flor-inferior {
+  bottom: 0;
+  left: 0;
+  transform: translate(-25%, 5%) rotate(180deg);; /* opcional */
+  
+  
+}
+
+.decoracion {
+  position: absolute;
+  width: 200px; /* puedes ajustar el tamaño */
+  height: auto;
+  opacity: 1; /* opcional para que no opaquen mucho */
+  z-index: 2; /* por encima del fondo */
+  pointer-events: none; /* evita que interfieran con clics/touch */
+}
+
+.section.ubicacion {
+  top: -140px;
+
+}
+
+.textosinsignificado {
+  margin-top: 100px;
+  font-size: 2rem;
+  font-family: "Arapey", serif;
+  margin-bottom: 0.4rem;
+  color: #000000;
+  margin-bottom: 0rem;
+}
+
+.ubicacion h2 {
+ 
+  font-family: "Gwendolyn", cursive;
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  color: #000;
+  margin-bottom: 1.2rem;
+}
+
+.eventoB {
+  border: 2px solid var(--cafe-borde);
+  padding: 0rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.evento-img {
+  
+  width: 100%;
+  height: 120%;
+  max-height: 300px;
+  object-fit: cover;
+  
+  margin-bottom: 1rem;
+}
+
+.eventoB h3 {
+
+  font-family: "Gwendolyn", cursive;
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+
+  
+}
+
+.eventoB p {
+  font-size: 1.4rem;
+  font-family: "Arapey", serif;
+  margin-bottom: 0.4rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+.btn-mapa {
+
+  letter-spacing: 6px; 
+  font-family: "Arapey", serif;
+  font-size: 1.3rem;
+  font-weight: 10;
+  margin-bottom: 2rem;
+  
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.8rem 1.8rem;
+  background-color: var(--verde-olivo);
+  color: white;
+  text-decoration: none;
+
+ 
+  transition: background-color 0.3s ease;
+}
+
+.btn-mapa:hover {
+  background-color: #556644;
+}
+
+.timeline {
+  top: -100px;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 120px;
+  left: 1.5rem;
+  width: 4px;
+  height: 1135px;
+  background-color: rgba(107, 142, 35, 0.3); /* opaca al inicio */
+  overflow: hidden;
+
+}
+
+
+
+.timeline h2 {
+  font-family: "Gwendolyn", cursive;
+  font-size: 2.5rem;
+  font-weight: normal;
+
+}
+
+.timeline h3 {
+  font-size: 1.4rem;
+  font-family: "Arapey", serif;
+  margin-bottom: 0.4rem;
+  color: #000000;
+  font-weight: normal;
+
+
+}
+
+.timeline-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--scroll-line-height, 0%);
+  background-color: var(--verde-olivo);
+  transition: height 0s ease;
+
+}
+
+.timeline-item {
+  text-align: center; /* Centra texto e imagen horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los hijos horizontalmente */
+  margin-bottom: 5rem; /* Espacio entre eventos */
+  opacity: 0.2;
+  transform: translateY(0px); /* Esto hace que al bajar la linea los elementos suban*/
+  transition: all 0.6s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -2.3rem;
+  top: 90px;
+  background-coloR: white;
+  border: 2px solid var(--verde-olivo);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+.heart-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: var(--verde-olivo);
+  transition: fill 0.5s;
+}
+
+.timeline-item.visible .timeline-icon {
+  background-color: var(--verde-olivo);
+  transform: scale(1.2);
+}
+
+.timeline-icon .heart-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: var(--verde-olivo);
+}
+
+.timeline-item.visible .heart-icon {
+  fill: white;
+}
+
+.timeline-item img {
+  width: 150px;  /* o el tamaño que desees */
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  margin-bottom: 4rem; /* Espacio extra si lo necesitas */
+}
+
+.registrar {
+  
+  border: 2px solid var(--cafe-borde);
+  padding: 0rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 430px;
+  margin-inline: auto;
+  height: 290px;
+ 
+}
+
+.registrar h2 {
+  margin-top: 40px;
+  font-size: 1.7rem;
+  font-family: "Arapey", serif;
+  margin-bottom: 0.4rem;
+  color: #000000;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.registrar p {
+  font-size: 1.2rem;
+  font-family: "Arapey", serif;
+  margin-bottom: 0.4rem;
+  color: #000000;
+  font-weight: normal;
+}
+
+.registrar input {
+  padding: 0.8rem;
+  width: 90%;
+  max-width: 300px;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+
+  font-size: 1rem;
+}
+
+.registrar button {
+  background-color: var(--verde-olivo);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+ 
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.registrar button:hover {
+  background-color: #5e7521;
+}
+
+.error, .exito {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+
+}
+
+.error {
+  color: red;
+}
+
+.exito {
+   color: green;
+}
+
+.oculto {
+  
+  display: none;
+}
+
+.vestimenta {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.vestimenta h2 {
+  font-family: "Gwendolyn", cursive;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+
+
+}
+
+.vestimenta p {
+  font-size: 1.7rem;
+  font-family: "Arapey", serif;
+  margin-bottom: 2rem;
+  color: #000000;
+  font-weight: normal;
+}
+
+.imagen-vestimenta {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+  border-radius: 8px;
+
+}
+
+.vestimenta img {
+  margin-bottom: 3rem;
+}
+
+.dedicatoriaMia p {
+  color: #313131;
+}
+#countdown {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+  color: inherit;
+  box-shadow: none;
+}
